@@ -1,0 +1,9 @@
+{
+  "name": "@michaeljaltamirano/eslint-plugin",
+  "version": "0.0.1",
+  "description": "Michael's Personal ESLint Preferences",
+  "main": "lib/",
+  "repository": "https://www.github.com/michaeljaltamirano/eslint-plugin",
+  "author": "Michael J. Altamirano",
+  "license": "MIT"
+}
