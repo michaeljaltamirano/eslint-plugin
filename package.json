@@ -1,12 +1,24 @@
 {
   "name": "@michaeljaltamirano/eslint-plugin",
   "version": "0.0.1",
-  "description": "Michael's Personal ESLint Preferences",
+  "description": "Strongly-opinionated ESLint config",
   "main": "lib/",
   "repository": "https://www.github.com/michaeljaltamirano/eslint-plugin",
   "author": "Michael J. Altamirano",
   "license": "MIT",
+  "keywords": [
+    "eslint",
+    "@typescript-eslint"
+  ],
   "devDependencies": {
+    "husky": "^4",
+    "lint-staged": "^10.5.4",
     "typescript": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint-staged",
+      "pre-push": "yarn run tsc"
+    }
   }
 }
