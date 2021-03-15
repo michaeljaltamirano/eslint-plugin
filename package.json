@@ -5,5 +5,8 @@
   "main": "lib/",
   "repository": "https://www.github.com/michaeljaltamirano/eslint-plugin",
   "author": "Michael J. Altamirano",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
 }
