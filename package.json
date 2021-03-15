@@ -29,5 +29,8 @@
       "pre-commit": "yarn run lint-staged",
       "pre-push": "yarn run tsc"
     }
+  },
+  "scripts": {
+    "build": "rm -rf lib && yarn run tsc -p tsconfig.json"
   }
 }
