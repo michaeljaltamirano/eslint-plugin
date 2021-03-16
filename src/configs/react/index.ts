@@ -1,5 +1,5 @@
-import { TSESLint } from '@typescript-eslint/experimental-utils';
-import { ERROR, OFF } from '../constants';
+import type { TSESLint } from '@typescript-eslint/experimental-utils';
+import { ERROR, OFF } from '../../constants';
 
 const jsxFilenameExtension: TSESLint.Linter.RuleLevelAndOptions = [
 	ERROR,
@@ -16,7 +16,7 @@ const requireDefaultProps: TSESLint.Linter.RuleLevelAndOptions = [
 ];
 
 export const react = {
-	extends: ['plugin:react/all'],
+	extends: ['plugin:react/all', 'airbnb'],
 	rules: {
 		'react/jsx-filename-extension': jsxFilenameExtension,
 		'react/require-default-props': requireDefaultProps,
