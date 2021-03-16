@@ -35,6 +35,7 @@
 		}
 	},
 	"scripts": {
-		"build": "rm -rf lib && yarn run tsc -p tsconfig.json"
+		"build": "rm -rf lib && yarn run tsc -p tsconfig.json",
+		"publish": "yarn run build && yarn publish --scope public"
 	}
 }
