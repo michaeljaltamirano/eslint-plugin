@@ -46,6 +46,7 @@
 		}
 	},
 	"scripts": {
-		"build": "rm -rf lib && yarn run tsc -p tsconfig.json"
+		"build": "yarn run tsc --build",
+		"clean": "yarn run tsc --build --clean"
 	}
 }
