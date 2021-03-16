@@ -1,6 +1,6 @@
 {
 	"name": "@michaeljaltamirano/eslint-plugin",
-	"version": "0.1.0",
+	"version": "0.1.5",
 	"description": "Strongly-opinionated ESLint config",
 	"main": "lib/",
 	"repository": "https://www.github.com/michaeljaltamirano/eslint-plugin",
@@ -35,7 +35,6 @@
 		}
 	},
 	"scripts": {
-		"build": "rm -rf lib && yarn run tsc -p tsconfig.json",
-		"publish": "yarn run build && yarn publish --scope public"
+		"build": "rm -rf lib && yarn run tsc -p tsconfig.json"
 	}
 }
