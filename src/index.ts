@@ -1,16 +1,42 @@
-import { jest } from './jest';
-import { typescript } from './typescript';
-import { react } from './react';
-import { rest } from './rest';
+import { TSESLint } from '@typescript-eslint/experimental-utils';
+import { jest } from './configs/jest';
+import { typescript } from './configs/typescript';
+import { react } from './configs/react';
+import { rest } from './configs/rest';
 
-const createAllRules = (...rest: Array<Record<string, unknown>>) =>
-	rest.map((ruleSet) => ruleSet);
+interface Accumulator extends Omit<TSESLint.Linter.Config, 'extends'> {
+	extends: string[];
+}
+
+const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
+	restRules.reduce<Accumulator>(
+		(acc, ruleSet) => {
+			if (ruleSet.rules) {
+				acc.rules = {
+					...acc.rules,
+					...ruleSet.rules,
+				};
+			}
+
+			if (ruleSet.extends) {
+				if (typeof ruleSet.extends === 'string') {
+					acc.extends.push(ruleSet.extends);
+				} else if (ruleSet.extends.length > 0) {
+					acc.extends = [...acc.extends, ...ruleSet.extends];
+				}
+			}
+
+			return acc;
+		},
+		{ extends: [] },
+	);
 
 const config = {
 	configs: {
-		all: createAllRules(jest, react, typescript, rest),
+		all: mergeAllRules(jest, react, typescript, rest),
 		jest,
 		react,
+		rest,
 		typescript,
 	},
 	rules: {},

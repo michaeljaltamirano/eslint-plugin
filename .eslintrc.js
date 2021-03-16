@@ -19,7 +19,7 @@ module.exports = {
 		ecmaVersion: 12,
 		sourceType: 'module',
 	},
-	plugins: ['react', '@typescript-eslint', 'import'],
+	plugins: ['react', '@typescript-eslint'],
 	rules: {
 		'no-tabs': 'off',
 		indent: ['error', 'tab'],
@@ -27,5 +27,7 @@ module.exports = {
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'import/prefer-default-export': 'off',
+		'import/no-unresolved': 'off',
+		'import/extensions': 'off',
 	},
 };
