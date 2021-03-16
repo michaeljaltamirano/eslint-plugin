@@ -10,7 +10,7 @@ interface Accumulator extends Omit<TSESLint.Linter.Config, 'extends'> {
 
 const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
 	restRules.reduce<Accumulator>(
-		(acc, ruleSet) => {
+		(acc, ruleSet, index) => {
 			if (ruleSet.rules) {
 				acc.rules = {
 					...acc.rules,
@@ -24,6 +24,11 @@ const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
 				} else if (ruleSet.extends.length > 0) {
 					acc.extends = [...acc.extends, ...ruleSet.extends];
 				}
+			}
+
+			if (index === restRules.length - 1) {
+				// Push prettier overrides as last entry in extends
+				acc.extends.push('plugin:prettier/recommended');
 			}
 
 			return acc;
