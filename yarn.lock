@@ -523,6 +523,28 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@michaeljaltamirano/eslint-plugin@^0.1.5":
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@michaeljaltamirano/eslint-plugin/-/eslint-plugin-0.1.5.tgz#db81e67f4946eb718b757e60d03bae0080e76f6a"
+  integrity sha512-rLnMcVNYIz2rXfnrU/Oqo/nFrgVlbLyBRBQQ+te/3NuOApQHt8UgYINDd47UwTQEMLuaBHG9egzh/czvwnVKgA==
+  dependencies:
+    "@types/node" "^14.14.35"
+    "@typescript-eslint/eslint-plugin" "^4.18.0"
+    "@typescript-eslint/experimental-utils" "^4.18.0"
+    "@typescript-eslint/parser" "^4.18.0"
+    eslint "^7.22.0"
+    eslint-config-airbnb "^18.2.1"
+    eslint-config-prettier "^8.1.0"
+    eslint-plugin-import "^2.22.1"
+    eslint-plugin-jsx-a11y "^6.4.1"
+    eslint-plugin-prettier "^3.3.1"
+    eslint-plugin-react "^7.22.0"
+    eslint-plugin-react-hooks "^4.2.0"
+    husky "^4"
+    lint-staged "^10.5.4"
+    prettier "^2.2.1"
+    typescript "^4.2.3"
+
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.4.tgz#d4b3549a5db5de2683e0c1071ab4f140904bbf69"

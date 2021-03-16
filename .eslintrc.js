@@ -7,16 +7,13 @@ module.exports = {
 		jest: true,
 	},
 	extends: [
-		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended',
-		'airbnb-base',
-		'plugin:jest/all',
-		'plugin:prettier/recommended',
+		'plugin:@michaeljaltamirano/all',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
 		ecmaVersion: 12,
 		sourceType: 'module',
+		project: './.eslint.tsconfig.json'
 	},
 	rules: {
 		'no-tabs': 'off',
@@ -27,10 +24,5 @@ module.exports = {
 		'import/prefer-default-export': 'off',
 		'import/no-unresolved': 'off',
 		'import/extensions': 'off',
-		'jest/lowercase-name': 'off',
-		'jest/no-large-snapshots': 'off',
-		'jest/prefer-called-with': 'off',
-		'jest/prefer-expect-assertions': 'off',
-		'jest/valid-title': 'off',
 	},
 };

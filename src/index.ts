@@ -1,14 +1,18 @@
-import { TSESLint } from '@typescript-eslint/experimental-utils';
+import type { TSESLint } from '@typescript-eslint/experimental-utils';
 import { base } from './configs/base';
 import { jest } from './configs/jest';
 import { react } from './configs/react';
 import { other } from './configs/other';
 import { prettier } from './configs/prettier';
 import { typescript } from './configs/typescript';
+import { isNotNullish } from './utils';
 
 interface Accumulator extends Omit<TSESLint.Linter.Config, 'extends'> {
 	extends: string[];
 }
+
+const FIRST_CONFIG = 0;
+const OFF_BY_ONE_DIFF = 1;
 
 const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
 	restRules.reduce<Accumulator>(
@@ -20,10 +24,10 @@ const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
 				};
 			}
 
-			if (ruleSet.extends) {
+			if (isNotNullish(ruleSet.extends)) {
 				if (typeof ruleSet.extends === 'string') {
 					acc.extends.push(ruleSet.extends);
-				} else if (ruleSet.extends.length > 0) {
+				} else if (!!ruleSet.extends.length) {
 					acc.extends = [...acc.extends, ...ruleSet.extends];
 				}
 			}
@@ -31,9 +35,9 @@ const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
 			/**
 			 * Not passed as explicit arg handling
 			 */
-			if (index === restRules.length - 1) {
+			if (index === restRules.length - OFF_BY_ONE_DIFF) {
 				// Push prettier overrides as last entry in extends
-				acc.extends.push(prettier.extends[0]);
+				acc.extends.push(prettier.extends[FIRST_CONFIG]);
 			}
 
 			return acc;
@@ -42,7 +46,7 @@ const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
 		 * Pull in only eslint recommended rules, ignore airbnb-base in favor of
 		 * airbnb pulled in from `react`
 		 */
-		{ extends: [base.extends[0]] },
+		{ extends: [base.extends[FIRST_CONFIG]] },
 	);
 
 const config = {

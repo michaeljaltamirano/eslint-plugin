@@ -1,6 +1,7 @@
 import { execSync } from 'child_process';
 import path from 'path';
 import fs from 'fs';
+import { isJson } from '../utils';
 
 const getFilePath = (dirname: string) => (file: string) =>
 	path.resolve(dirname, file);
@@ -28,9 +29,13 @@ export const generateTest = (
 			},
 		);
 
-		const configJson = JSON.parse(
+		const configJson: unknown = JSON.parse(
 			eslintConfig.substring(eslintConfig.indexOf('{')),
 		);
+
+		if (!isJson(configJson)) {
+			throw new Error('parse error');
+		}
 
 		expect(configJson).toMatchSnapshot();
 	});

@@ -1,4 +1,4 @@
-import { TSESLint } from '@typescript-eslint/experimental-utils';
+import type { TSESLint } from '@typescript-eslint/experimental-utils';
 import { ERROR, OFF } from '../../constants';
 
 const noConsole: TSESLint.Linter.RuleLevelAndOptions = [
