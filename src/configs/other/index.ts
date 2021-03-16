@@ -1,5 +1,5 @@
 import { TSESLint } from '@typescript-eslint/experimental-utils';
-import { ERROR, OFF } from '../constants';
+import { ERROR, OFF } from '../../constants';
 
 const noConsole: TSESLint.Linter.RuleLevelAndOptions = [
 	ERROR,
@@ -8,7 +8,7 @@ const noConsole: TSESLint.Linter.RuleLevelAndOptions = [
 	},
 ];
 
-export const rest = {
+export const other = {
 	rules: {
 		'arrow-parens': OFF,
 		'no-console': noConsole,

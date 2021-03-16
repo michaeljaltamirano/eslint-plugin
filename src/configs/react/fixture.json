@@ -1,0 +1,15 @@
+{
+	"extends": ["plugin:react/all", "airbnb"],
+	"rules": {
+		"react/jsx-filename-extension": [
+			"error",
+			{ "extensions": [".js", ".tsx"] }
+		],
+		"react/require-default-props": [
+			"error",
+			{ "ignoreFunctionalComponents": true }
+		],
+		"react/state-in-constructor": "off",
+		"react/static-property-placement": "off"
+	}
+}

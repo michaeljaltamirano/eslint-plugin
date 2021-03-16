@@ -1,5 +1,5 @@
 import { TSESLint } from '@typescript-eslint/experimental-utils';
-import { ERROR, OFF } from '../constants';
+import { ERROR, OFF } from '../../constants';
 
 const jsxFilenameExtension: TSESLint.Linter.RuleLevelAndOptions = [
 	ERROR,

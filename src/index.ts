@@ -2,7 +2,7 @@ import { TSESLint } from '@typescript-eslint/experimental-utils';
 import { base } from './configs/base';
 import { jest } from './configs/jest';
 import { react } from './configs/react';
-import { rest } from './configs/rest';
+import { other } from './configs/other';
 import { prettier } from './configs/prettier';
 import { typescript } from './configs/typescript';
 
@@ -47,11 +47,11 @@ const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
 
 const config = {
 	configs: {
-		all: mergeAllRules(jest, react, rest, typescript),
+		all: mergeAllRules(jest, react, other, typescript),
 		base,
 		jest,
 		react,
-		rest,
+		other,
 		prettier,
 		typescript,
 	},
