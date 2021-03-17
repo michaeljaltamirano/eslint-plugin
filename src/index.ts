@@ -14,7 +14,7 @@ interface Accumulator extends Omit<TSESLint.Linter.Config, 'extends'> {
 const FIRST_CONFIG = 0;
 const OFF_BY_ONE_DIFF = 1;
 
-const mergeAllRules = (...restRules: Array<TSESLint.Linter.Config>) =>
+const mergeAllRules = (...restRules: TSESLint.Linter.Config[]) =>
 	restRules.reduce<Accumulator>(
 		(acc, ruleSet, index) => {
 			if (ruleSet.rules) {

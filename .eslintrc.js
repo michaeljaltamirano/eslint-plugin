@@ -13,7 +13,7 @@ module.exports = {
 	parserOptions: {
 		ecmaVersion: 12,
 		sourceType: 'module',
-		project: './.eslint.tsconfig.json'
+		project: './tsconfig.json'
 	},
 	rules: {
 		'no-tabs': 'off',
