@@ -54,6 +54,7 @@
 	"scripts": {
 		"build": "yarn run tsc --build",
 		"clean": "yarn run tsc --build --clean",
-		"lint": "yarn run eslint src/**/*"
+		"lint": "yarn run eslint src/**/*",
+		"test": "yarn run jest"
 	}
 }
