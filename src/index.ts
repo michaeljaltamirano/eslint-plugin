@@ -27,7 +27,7 @@ const mergeAllRules = (...restRules: TSESLint.Linter.Config[]) =>
 			if (isNotNullish(ruleSet.extends)) {
 				if (typeof ruleSet.extends === 'string') {
 					acc.extends.push(ruleSet.extends);
-				} else if (!!ruleSet.extends.length) {
+				} else {
 					acc.extends = [...acc.extends, ...ruleSet.extends];
 				}
 			}
