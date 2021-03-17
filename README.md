@@ -13,29 +13,29 @@ Currently there are no additional rules added via the plugin, so it is purely co
 ### All
 
 ```json
-"extends": "plugin:@michaeljaltamirano/all
+"extends": "plugin:@michaeljaltamirano/all"
 ```
 
 ### Jest configuration
 
 ```json
-"extends": "plugin:@michaeljaltamirano/jest
+"extends": "plugin:@michaeljaltamirano/jest"
 ```
 
 ### React configuration
 
 ```json
-"extends": "plugin:@michaeljaltamirano/react
+"extends": "plugin:@michaeljaltamirano/react"
 ```
 
 ### TypeScript configuration
 
 ```json
-"extends": "plugin:@michaeljaltamirano/typescript
+"extends": "plugin:@michaeljaltamirano/typescript"
 ```
 
 ### Other rules
 
 ```json
-"extends": "plugin:@michaeljaltamirano/other
+"extends": "plugin:@michaeljaltamirano/other"
 ```
