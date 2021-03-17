@@ -5,7 +5,6 @@ Object {
   "env": Object {},
   "globals": Object {},
   "ignorePatterns": Array [],
-  "parser": null,
   "parserOptions": Object {},
   "plugins": Array [
     "prettier",

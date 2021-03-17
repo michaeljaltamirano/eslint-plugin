@@ -37,6 +37,13 @@ export const generateTest = (
 			throw new Error('parse error');
 		}
 
-		expect(configJson).toMatchSnapshot();
+		/**
+		 * We don't care about the parser option; the TypeScript
+		 * config will also fail in CI due to directory path
+		 */
+		const { parser, ...otherConfigOptions } = configJson;
+
+		expect(parser === undefined).toBe(false);
+		expect(otherConfigOptions).toMatchSnapshot();
 	});
 };

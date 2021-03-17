@@ -8,7 +8,6 @@ Object {
   },
   "globals": Object {},
   "ignorePatterns": Array [],
-  "parser": null,
   "parserOptions": Object {
     "ecmaFeatures": Object {
       "generators": false,
