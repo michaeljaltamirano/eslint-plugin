@@ -1,5 +1,10 @@
 export const base = {
-	extends: ['eslint:recommended', 'plugin:promise/recommended', 'airbnb-base'],
+	extends: [
+		'eslint:recommended',
+		'plugin:promise/recommended',
+		'plugin:sonarjs/recommended',
+		'airbnb-base',
+	],
 	rules: {
 		'promise/no-nesting': 'error',
 		'promise/no-return-in-finally': 'error',

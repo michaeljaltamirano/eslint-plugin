@@ -2,6 +2,7 @@
 	"extends": [
 		"eslint:recommended",
 		"plugin:promise/recommended",
+		"plugin:sonarjs/recommended",
 		"airbnb-base"
 	],
 	"rules": {
