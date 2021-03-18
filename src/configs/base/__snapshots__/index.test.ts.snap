@@ -17,6 +17,7 @@ Object {
     "sourceType": "module",
   },
   "plugins": Array [
+    "promise",
     "import",
   ],
   "rules": Object {
@@ -1558,6 +1559,48 @@ Object {
       "error",
     ],
     "prefer-template": Array [
+      "error",
+    ],
+    "promise/always-return": Array [
+      "error",
+    ],
+    "promise/avoid-new": Array [
+      "off",
+    ],
+    "promise/catch-or-return": Array [
+      "error",
+    ],
+    "promise/no-callback-in-promise": Array [
+      "warn",
+    ],
+    "promise/no-native": Array [
+      "off",
+    ],
+    "promise/no-nesting": Array [
+      "error",
+    ],
+    "promise/no-new-statics": Array [
+      "error",
+    ],
+    "promise/no-promise-in-callback": Array [
+      "warn",
+    ],
+    "promise/no-return-in-finally": Array [
+      "error",
+    ],
+    "promise/no-return-wrap": Array [
+      "error",
+    ],
+    "promise/param-names": Array [
+      "error",
+    ],
+    "promise/prefer-await-to-callbacks": Array [
+      "error",
+    ],
+    "promise/prefer-await-to-then": Array [
+      "error",
+    ],
+    "promise/valid-params": Array [
       "error",
     ],
     "quote-props": Array [
