@@ -1,6 +1,6 @@
 {
 	"name": "@michaeljaltamirano/eslint-plugin",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Strongly-opinionated ESLint config",
 	"main": "lib/",
 	"repository": "https://www.github.com/michaeljaltamirano/eslint-plugin",
