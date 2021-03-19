@@ -6,6 +6,8 @@
 		"airbnb-base"
 	],
 	"rules": {
+		"arrow-parens": "off",
+		"no-console": ["error", { "allow": ["warn", "error"] }],
 		"promise/no-nesting": "error",
 		"promise/no-return-in-finally": "error",
 		"promise/valid-params": "error",

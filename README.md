@@ -16,10 +16,22 @@ Currently there are no additional rules added via the plugin, so it is purely co
 "extends": "plugin:@michaeljaltamirano/all"
 ```
 
+### Base
+
+```json
+"extends": "plugin:@michaeljaltamirano/base"
+```
+
 ### Jest configuration
 
 ```json
 "extends": "plugin:@michaeljaltamirano/jest"
+```
+
+### Prettier configuration
+
+```json
+"extends": "plugin:@michaeljaltamirano/prettier"
 ```
 
 ### React configuration
@@ -32,10 +44,4 @@ Currently there are no additional rules added via the plugin, so it is purely co
 
 ```json
 "extends": "plugin:@michaeljaltamirano/typescript"
-```
-
-### Other rules
-
-```json
-"extends": "plugin:@michaeljaltamirano/other"
 ```

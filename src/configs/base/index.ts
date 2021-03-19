@@ -1,3 +1,13 @@
+import type { TSESLint } from '@typescript-eslint/experimental-utils';
+import { ERROR, OFF } from '../../constants';
+
+const noConsole: TSESLint.Linter.RuleLevelAndOptions = [
+	ERROR,
+	{
+		allow: ['warn', ERROR],
+	},
+];
+
 export const base = {
 	extends: [
 		'eslint:recommended',
@@ -6,6 +16,8 @@ export const base = {
 		'airbnb-base',
 	],
 	rules: {
+		'arrow-parens': OFF,
+		'no-console': noConsole,
 		'promise/no-nesting': 'error',
 		'promise/no-return-in-finally': 'error',
 		'promise/valid-params': 'error', // Not needed if using TS
