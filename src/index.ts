@@ -2,7 +2,6 @@ import type { TSESLint } from '@typescript-eslint/experimental-utils';
 import { base } from './configs/base';
 import { jest } from './configs/jest';
 import { react } from './configs/react';
-import { other } from './configs/other';
 import { prettier } from './configs/prettier';
 import { typescript } from './configs/typescript';
 import { isNotNullish } from './utils';
@@ -14,7 +13,11 @@ interface Accumulator extends Omit<TSESLint.Linter.Config, 'extends'> {
 const FIRST_CONFIG = 0;
 const OFF_BY_ONE_DIFF = 1;
 
-const mergeAllRules = (...restRules: TSESLint.Linter.Config[]) =>
+const baseExtendsWithoutAirbnbBase = base.extends.filter(
+	(rule) => rule !== 'airbnb-base',
+);
+
+const mergeRules = (...restRules: TSESLint.Linter.Config[]) =>
 	restRules.reduce<Accumulator>(
 		(acc, ruleSet, index) => {
 			if (ruleSet.rules) {
@@ -43,19 +46,17 @@ const mergeAllRules = (...restRules: TSESLint.Linter.Config[]) =>
 			return acc;
 		},
 		/**
-		 * Pull in only eslint recommended rules, ignore airbnb-base in favor of
-		 * airbnb pulled in from `react`
+		 * Ignore airbnb-base-eslint-config in favor of airbnb-eslint-config
 		 */
-		{ extends: [base.extends[FIRST_CONFIG]] },
+		{ extends: baseExtendsWithoutAirbnbBase, rules: { ...base.rules } },
 	);
 
 const config = {
 	configs: {
-		all: mergeAllRules(jest, react, other, typescript),
+		all: mergeRules(jest, react, typescript),
 		base,
 		jest,
 		react,
-		other,
 		prettier,
 		typescript,
 	},
