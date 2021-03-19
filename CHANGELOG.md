@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.5.0
+
+- Move `other` rules into `base`, fix `base` handling in `all` config
+
 ## 0.4.0
 
 - Add `eslint-plugin-sonarjs` rules to `plugin:@michaeljaltamirano/base`
