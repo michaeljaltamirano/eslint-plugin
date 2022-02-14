@@ -1,3 +1,4 @@
+import type { TSESLint } from '@typescript-eslint/experimental-utils';
 import { execSync } from 'child_process';
 import path from 'path';
 import fs from 'fs';
@@ -6,12 +7,11 @@ import { isJson } from '../utils';
 const getFilePath = (dirname: string) => (file: string) =>
 	path.resolve(dirname, file);
 
-// eslint-disable-next-line jest/no-export
-export const generateTest = (
-	dirname: string,
-	config: Record<string, unknown>,
-): void => {
-	// eslint-disable-next-line jest/require-top-level-describe
+interface Config extends Omit<TSESLint.Linter.Config, 'extends'> {
+	extends: readonly string[];
+}
+
+export const generateTest = (dirname: string, config: Config): void => {
 	test('serializes to a snapshot', () => {
 		const baseJson = JSON.stringify(config);
 		const setPath = getFilePath(dirname);

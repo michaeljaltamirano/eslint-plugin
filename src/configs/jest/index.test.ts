@@ -1,5 +1,5 @@
 import { jest } from '.';
-import { generateTest } from '../testUtils';
+import { generateTest } from '../../tests/utils';
 
 describe('@michaeljaltamirano/eslint-plugin', () => {
 	describe('jest config', () => {

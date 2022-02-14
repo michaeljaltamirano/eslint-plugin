@@ -10,6 +10,12 @@ Object {
     "prettier",
   ],
   "rules": Object {
+    "@babel/object-curly-spacing": Array [
+      "off",
+    ],
+    "@babel/semi": Array [
+      "off",
+    ],
     "@typescript-eslint/brace-style": Array [
       "off",
     ],
@@ -122,6 +128,9 @@ Object {
       "off",
     ],
     "flowtype/object-type-delimiter": Array [
+      "off",
+    ],
+    "flowtype/quotes": Array [
       "off",
     ],
     "flowtype/semi": Array [

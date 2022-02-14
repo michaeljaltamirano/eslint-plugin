@@ -16,7 +16,7 @@ const validTitle: TSESLint.Linter.RuleLevelAndOptions = [
 export const jest = {
 	extends: ['plugin:jest/all'],
 	rules: {
-		'jest/lowercase-name': lowercaseName,
+		'jest/prefer-lowercase-title': lowercaseName,
 		'jest/no-large-snapshots': OFF,
 		'jest/prefer-called-with': OFF,
 		'jest/prefer-expect-assertions': OFF,

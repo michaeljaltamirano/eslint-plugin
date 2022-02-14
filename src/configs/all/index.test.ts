@@ -1,8 +1,8 @@
-import { base } from '.';
+import { all } from '.';
 import { generateTest } from '../../tests/utils';
 
 describe('@michaeljaltamirano/eslint-plugin', () => {
-	describe('base config', () => {
-		generateTest(__dirname, base);
+	describe('all config', () => {
+		generateTest(__dirname, all);
 	});
 });

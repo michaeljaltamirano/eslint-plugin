@@ -18,14 +18,8 @@ Object {
     "jest/expect-expect": Array [
       "error",
     ],
-    "jest/lowercase-name": Array [
+    "jest/max-nested-describe": Array [
       "error",
-      Object {
-        "ignore": Array [
-          "describe",
-        ],
-        "ignoreTopLevelDescribe": false,
-      },
     ],
     "jest/no-alias-methods": Array [
       "error",
@@ -34,6 +28,9 @@ Object {
       "error",
     ],
     "jest/no-conditional-expect": Array [
+      "error",
+    ],
+    "jest/no-conditional-in-test": Array [
       "error",
     ],
     "jest/no-deprecated-functions": Array [
@@ -58,9 +55,6 @@ Object {
       "error",
     ],
     "jest/no-identical-title": Array [
-      "error",
-    ],
-    "jest/no-if": Array [
       "error",
     ],
     "jest/no-interpolation-in-snapshots": Array [
@@ -93,10 +87,31 @@ Object {
     "jest/prefer-called-with": Array [
       "off",
     ],
+    "jest/prefer-comparison-matcher": Array [
+      "error",
+    ],
+    "jest/prefer-equality-matcher": Array [
+      "error",
+    ],
     "jest/prefer-expect-assertions": Array [
       "off",
     ],
+    "jest/prefer-expect-resolves": Array [
+      "error",
+    ],
     "jest/prefer-hooks-on-top": Array [
+      "error",
+    ],
+    "jest/prefer-lowercase-title": Array [
+      "error",
+      Object {
+        "ignore": Array [
+          "describe",
+        ],
+        "ignoreTopLevelDescribe": false,
+      },
+    ],
+    "jest/prefer-snapshot-hint": Array [
       "error",
     ],
     "jest/prefer-spy-on": Array [
@@ -105,10 +120,7 @@ Object {
     "jest/prefer-strict-equal": Array [
       "error",
     ],
-    "jest/prefer-to-be-null": Array [
-      "error",
-    ],
-    "jest/prefer-to-be-undefined": Array [
+    "jest/prefer-to-be": Array [
       "error",
     ],
     "jest/prefer-to-contain": Array [
@@ -120,6 +132,9 @@ Object {
     "jest/prefer-todo": Array [
       "error",
     ],
+    "jest/require-hook": Array [
+      "error",
+    ],
     "jest/require-to-throw-message": Array [
       "error",
     ],
@@ -129,7 +144,7 @@ Object {
     "jest/unbound-method": Array [
       "error",
     ],
-    "jest/valid-describe": Array [
+    "jest/valid-describe-callback": Array [
       "error",
     ],
     "jest/valid-expect": Array [
