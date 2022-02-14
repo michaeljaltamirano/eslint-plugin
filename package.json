@@ -11,7 +11,7 @@
 		"@typescript-eslint"
 	],
 	"devDependencies": {
-		"@michaeljaltamirano/eslint-plugin": "file:./lib",
+		"@michaeljaltamirano/eslint-plugin": "https://github.com/michaeljaltamirano/eslint-plugin.git#update-deps",
 		"@types/jest": "^27.4.0",
 		"@types/node": "^17.0.17",
 		"@typescript-eslint/eslint-plugin": "^5.11.0",

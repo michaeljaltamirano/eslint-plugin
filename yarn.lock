@@ -540,8 +540,9 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@michaeljaltamirano/eslint-plugin@file:./lib":
-  version "0.0.0"
+"@michaeljaltamirano/eslint-plugin@https://github.com/michaeljaltamirano/eslint-plugin.git#update-deps":
+  version "0.5.0"
+  resolved "https://github.com/michaeljaltamirano/eslint-plugin.git#2c26a8d038e593e6eab056b7c29e87965d3dafae"
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
