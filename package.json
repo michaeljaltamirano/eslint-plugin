@@ -61,6 +61,7 @@
 		"build": "yarn run tsc --build",
 		"clean": "yarn run tsc --build --clean",
 		"lint": "yarn run eslint 'src/**/*.ts'",
+		"lint-tests": "yarn run eslint --no-eslintrc --config ./.eslintrc.jest.js 'src/**/*.test.ts' 'src/tests/**/*.ts'",
 		"test": "yarn run jest src"
 	}
 }
