@@ -117,4 +117,3 @@ dist
 
 # build
 .tsbuildinfo.json
-lib/

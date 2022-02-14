@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@michaeljaltamirano/eslint-plugin other config serializes to a snapshot 1`] = `
+Object {
+  "env": Object {},
+  "globals": Object {},
+  "ignorePatterns": Array [],
+  "parserOptions": Object {},
+  "plugins": Array [],
+  "rules": Object {
+    "arrow-parens": Array [
+      "off",
+    ],
+    "no-console": Array [
+      "error",
+      Object {
+        "allow": Array [
+          "warn",
+          "error",
+        ],
+      },
+    ],
+  },
+  "settings": Object {},
+}
+`;

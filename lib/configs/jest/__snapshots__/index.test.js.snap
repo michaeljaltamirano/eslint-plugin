@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@michaeljaltamirano/eslint-plugin jest config serializes to a snapshot 1`] = `
+Object {
+  "env": Object {
+    "jest/globals": true,
+  },
+  "globals": Object {},
+  "ignorePatterns": Array [],
+  "parserOptions": Object {},
+  "plugins": Array [
+    "jest",
+  ],
+  "rules": Object {
+    "jest/consistent-test-it": Array [
+      "error",
+    ],
+    "jest/expect-expect": Array [
+      "error",
+    ],
+    "jest/lowercase-name": Array [
+      "error",
+      Object {
+        "ignore": Array [
+          "describe",
+        ],
+        "ignoreTopLevelDescribe": false,
+      },
+    ],
+    "jest/no-alias-methods": Array [
+      "error",
+    ],
+    "jest/no-commented-out-tests": Array [
+      "error",
+    ],
+    "jest/no-conditional-expect": Array [
+      "error",
+    ],
+    "jest/no-deprecated-functions": Array [
+      "error",
+    ],
+    "jest/no-disabled-tests": Array [
+      "error",
+    ],
+    "jest/no-done-callback": Array [
+      "error",
+    ],
+    "jest/no-duplicate-hooks": Array [
+      "error",
+    ],
+    "jest/no-export": Array [
+      "error",
+    ],
+    "jest/no-focused-tests": Array [
+      "error",
+    ],
+    "jest/no-hooks": Array [
+      "error",
+    ],
+    "jest/no-identical-title": Array [
+      "error",
+    ],
+    "jest/no-if": Array [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": Array [
+      "error",
+    ],
+    "jest/no-jasmine-globals": Array [
+      "error",
+    ],
+    "jest/no-jest-import": Array [
+      "error",
+    ],
+    "jest/no-large-snapshots": Array [
+      "off",
+    ],
+    "jest/no-mocks-import": Array [
+      "error",
+    ],
+    "jest/no-restricted-matchers": Array [
+      "error",
+    ],
+    "jest/no-standalone-expect": Array [
+      "error",
+    ],
+    "jest/no-test-prefixes": Array [
+      "error",
+    ],
+    "jest/no-test-return-statement": Array [
+      "error",
+    ],
+    "jest/prefer-called-with": Array [
+      "off",
+    ],
+    "jest/prefer-expect-assertions": Array [
+      "off",
+    ],
+    "jest/prefer-hooks-on-top": Array [
+      "error",
+    ],
+    "jest/prefer-spy-on": Array [
+      "error",
+    ],
+    "jest/prefer-strict-equal": Array [
+      "error",
+    ],
+    "jest/prefer-to-be-null": Array [
+      "error",
+    ],
+    "jest/prefer-to-be-undefined": Array [
+      "error",
+    ],
+    "jest/prefer-to-contain": Array [
+      "error",
+    ],
+    "jest/prefer-to-have-length": Array [
+      "error",
+    ],
+    "jest/prefer-todo": Array [
+      "error",
+    ],
+    "jest/require-to-throw-message": Array [
+      "error",
+    ],
+    "jest/require-top-level-describe": Array [
+      "error",
+    ],
+    "jest/unbound-method": Array [
+      "error",
+    ],
+    "jest/valid-describe": Array [
+      "error",
+    ],
+    "jest/valid-expect": Array [
+      "error",
+    ],
+    "jest/valid-expect-in-promise": Array [
+      "error",
+    ],
+    "jest/valid-title": Array [
+      "error",
+      Object {
+        "ignoreTypeOfDescribeName": true,
+      },
+    ],
+  },
+  "settings": Object {},
+}
+`;
