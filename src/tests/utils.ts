@@ -1,17 +1,16 @@
-import type { TSESLint } from '@typescript-eslint/experimental-utils';
 import { execSync } from 'child_process';
 import path from 'path';
 import fs from 'fs';
 import { isJson } from '../utils';
+import type { EslintConfigWithReadonlyExtends } from '../types';
 
 const getFilePath = (dirname: string) => (file: string) =>
 	path.resolve(dirname, file);
 
-interface Config extends Omit<TSESLint.Linter.Config, 'extends'> {
-	extends: readonly string[];
-}
-
-export const generateTest = (dirname: string, config: Config): void => {
+export const generateTest = (
+	dirname: string,
+	config: EslintConfigWithReadonlyExtends,
+): void => {
 	test('serializes to a snapshot', () => {
 		const baseJson = JSON.stringify(config);
 		const setPath = getFilePath(dirname);

@@ -4,7 +4,10 @@ import { react } from '../react';
 import { prettier } from '../prettier';
 import { typescript } from '../typescript';
 import { isNotNullish } from '../../utils';
-import type { EslintConfig } from '../../types';
+import type {
+	EslintConfig,
+	EslintConfigWithReadonlyExtends,
+} from '../../types';
 
 const FIRST_CONFIG = 0;
 const OFF_BY_ONE_DIFF = 1;
@@ -13,7 +16,7 @@ const baseExtendsWithoutAirbnbBase = base.extends.filter(
 	(rule) => rule !== 'airbnb-base',
 );
 
-const mergeRules = (...restRules: EslintConfig[]) =>
+const mergeRules = (...restRules: EslintConfigWithReadonlyExtends[]) =>
 	restRules.reduce<EslintConfig>(
 		(acc, ruleSet, index) => {
 			if (ruleSet.rules) {
