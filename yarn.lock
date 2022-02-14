@@ -540,9 +540,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@michaeljaltamirano/eslint-plugin@https://github.com/michaeljaltamirano/eslint-plugin.git#update-deps":
-  version "0.5.0"
-  resolved "https://github.com/michaeljaltamirano/eslint-plugin.git#2c26a8d038e593e6eab056b7c29e87965d3dafae"
+"@michaeljaltamirano/eslint-plugin@^0.6.0-beta":
+  version "0.6.0-beta"
+  resolved "https://registry.yarnpkg.com/@michaeljaltamirano/eslint-plugin/-/eslint-plugin-0.6.0-beta.tgz#206b49efad704507c486eb7ccf6dc226a1568582"
+  integrity sha512-jV1Rg6HZQs6NIDRWDPkz4Hy2uHXR2HyvCemDYDaFNayadjAUlzF+vjQQGH6D8I7i7w6eJXdax+mjBpAmibQnVQ==
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
