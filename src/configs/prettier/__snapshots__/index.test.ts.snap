@@ -52,6 +52,9 @@ Object {
     "@typescript-eslint/semi": Array [
       "off",
     ],
+    "@typescript-eslint/space-before-blocks": Array [
+      "off",
+    ],
     "@typescript-eslint/space-before-function-paren": Array [
       "off",
     ],
@@ -500,6 +503,9 @@ Object {
       "off",
     ],
     "vue/operator-linebreak": Array [
+      "off",
+    ],
+    "vue/quote-props": Array [
       "off",
     ],
     "vue/script-indent": Array [

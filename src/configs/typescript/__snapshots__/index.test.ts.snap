@@ -216,6 +216,9 @@ Object {
     "@typescript-eslint/no-redeclare": Array [
       "error",
     ],
+    "@typescript-eslint/no-redundant-type-constituents": Array [
+      "error",
+    ],
     "@typescript-eslint/no-require-imports": Array [
       "error",
     ],
@@ -280,6 +283,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-useless-constructor": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-useless-empty-export": Array [
       "error",
     ],
     "@typescript-eslint/no-var-requires": Array [
@@ -368,6 +374,9 @@ Object {
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
       "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
+      "error",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
       "error",
@@ -553,6 +562,9 @@ Object {
       "off",
     ],
     "semi": Array [
+      "off",
+    ],
+    "space-before-blocks": Array [
       "off",
     ],
     "space-before-function-paren": Array [

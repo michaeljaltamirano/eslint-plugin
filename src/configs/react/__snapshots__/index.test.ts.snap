@@ -1009,6 +1009,7 @@ Object {
       "error",
       Object {
         "allowParens": true,
+        "onlyOneSimpleParam": false,
       },
     ],
     "no-console": Array [
@@ -1977,6 +1978,12 @@ Object {
         ],
         "unnamedComponents": "function-expression",
       },
+    ],
+    "react/hook-use-state": Array [
+      2,
+    ],
+    "react/iframe-missing-sandbox": Array [
+      2,
     ],
     "react/jsx-boolean-value": Array [
       "error",

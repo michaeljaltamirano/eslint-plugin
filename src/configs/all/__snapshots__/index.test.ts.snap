@@ -239,6 +239,9 @@ Object {
     "@typescript-eslint/no-redeclare": Array [
       "error",
     ],
+    "@typescript-eslint/no-redundant-type-constituents": Array [
+      "error",
+    ],
     "@typescript-eslint/no-require-imports": Array [
       "error",
     ],
@@ -303,6 +306,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-useless-constructor": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-useless-empty-export": Array [
       "error",
     ],
     "@typescript-eslint/no-var-requires": Array [
@@ -390,6 +396,9 @@ Object {
       "off",
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
       "off",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
@@ -1606,6 +1615,7 @@ Object {
       0,
       Object {
         "allowParens": true,
+        "onlyOneSimpleParam": false,
       },
     ],
     "no-console": Array [
@@ -2635,6 +2645,12 @@ Object {
         "unnamedComponents": "function-expression",
       },
     ],
+    "react/hook-use-state": Array [
+      2,
+    ],
+    "react/iframe-missing-sandbox": Array [
+      2,
+    ],
     "react/jsx-boolean-value": Array [
       "error",
       "never",
@@ -3151,7 +3167,7 @@ Object {
       "error",
     ],
     "sonarjs/no-inverted-boolean-check": Array [
-      "error",
+      "off",
     ],
     "sonarjs/no-nested-switch": Array [
       "error",
@@ -3446,6 +3462,9 @@ Object {
       "off",
     ],
     "vue/operator-linebreak": Array [
+      "off",
+    ],
+    "vue/quote-props": Array [
       "off",
     ],
     "vue/script-indent": Array [
