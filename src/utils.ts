@@ -8,9 +8,7 @@ function isObjectLike(arg: unknown): arg is Record<string, unknown> {
 	);
 }
 
-function isJson(
-	arg: unknown | Record<string, unknown>,
-): arg is Record<string, unknown> {
+function isJson(arg: unknown): arg is Record<string, unknown> {
 	if (!isNotNullish(arg)) return false;
 
 	return isObjectLike(arg);
