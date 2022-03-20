@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## 0.7.0
+
+- Update dependencies for ESLint 8 compatibility
+- Update local linting environment
+
+## 0.6.0
+
+No release (beta only, re-released as 0.7.0)
+
 ## 0.5.0
 
 - Move `other` rules into `base`, fix `base` handling in `all` config
