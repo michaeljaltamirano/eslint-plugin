@@ -2,16 +2,15 @@ import { execSync } from 'child_process';
 import path from 'path';
 import fs from 'fs';
 import { isJson } from '../utils';
+import type { EslintConfigWithReadonlyExtends } from '../types';
 
 const getFilePath = (dirname: string) => (file: string) =>
 	path.resolve(dirname, file);
 
-// eslint-disable-next-line jest/no-export
 export const generateTest = (
 	dirname: string,
-	config: Record<string, unknown>,
+	config: EslintConfigWithReadonlyExtends,
 ): void => {
-	// eslint-disable-next-line jest/require-top-level-describe
 	test('serializes to a snapshot', () => {
 		const baseJson = JSON.stringify(config);
 		const setPath = getFilePath(dirname);

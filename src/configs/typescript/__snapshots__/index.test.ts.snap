@@ -58,6 +58,9 @@ Object {
       "error",
       "interface",
     ],
+    "@typescript-eslint/consistent-type-exports": Array [
+      "error",
+    ],
     "@typescript-eslint/consistent-type-imports": Array [
       "error",
     ],
@@ -186,6 +189,9 @@ Object {
     "@typescript-eslint/no-magic-numbers": Array [
       "error",
     ],
+    "@typescript-eslint/no-meaningless-void-operator": Array [
+      "error",
+    ],
     "@typescript-eslint/no-misused-new": Array [
       "error",
     ],
@@ -193,6 +199,9 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-namespace": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-non-null-asserted-nullish-coalescing": Array [
       "error",
     ],
     "@typescript-eslint/no-non-null-asserted-optional-chain": Array [
@@ -207,7 +216,13 @@ Object {
     "@typescript-eslint/no-redeclare": Array [
       "error",
     ],
+    "@typescript-eslint/no-redundant-type-constituents": Array [
+      "error",
+    ],
     "@typescript-eslint/no-require-imports": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-restricted-imports": Array [
       "error",
     ],
     "@typescript-eslint/no-shadow": Array [
@@ -240,6 +255,9 @@ Object {
     "@typescript-eslint/no-unnecessary-type-constraint": Array [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-argument": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unsafe-assignment": Array [
       "error",
     ],
@@ -267,6 +285,9 @@ Object {
     "@typescript-eslint/no-useless-constructor": Array [
       "error",
     ],
+    "@typescript-eslint/no-useless-empty-export": Array [
+      "error",
+    ],
     "@typescript-eslint/no-var-requires": Array [
       "error",
     ],
@@ -274,6 +295,9 @@ Object {
       "off",
     ],
     "@typescript-eslint/object-curly-spacing": Array [
+      "error",
+    ],
+    "@typescript-eslint/padding-line-between-statements": Array [
       "error",
     ],
     "@typescript-eslint/prefer-as-const": Array [
@@ -315,6 +339,9 @@ Object {
     "@typescript-eslint/prefer-regexp-exec": Array [
       "error",
     ],
+    "@typescript-eslint/prefer-return-this-type": Array [
+      "error",
+    ],
     "@typescript-eslint/prefer-string-starts-ends-with": Array [
       "error",
     ],
@@ -347,6 +374,9 @@ Object {
     ],
     "@typescript-eslint/sort-type-union-intersection-members": Array [
       "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
+      "error",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
       "error",
@@ -468,6 +498,9 @@ Object {
     "no-redeclare": Array [
       "off",
     ],
+    "no-restricted-imports": Array [
+      "off",
+    ],
     "no-return-await": Array [
       "off",
     ],
@@ -510,6 +543,9 @@ Object {
     "object-curly-spacing": Array [
       "off",
     ],
+    "padding-line-between-statements": Array [
+      "off",
+    ],
     "prefer-const": Array [
       "error",
     ],
@@ -526,6 +562,9 @@ Object {
       "off",
     ],
     "semi": Array [
+      "off",
+    ],
+    "space-before-blocks": Array [
       "off",
     ],
     "space-before-function-paren": Array [

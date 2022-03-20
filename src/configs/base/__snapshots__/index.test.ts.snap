@@ -110,6 +110,7 @@ Object {
     "class-methods-use-this": Array [
       "error",
       Object {
+        "enforceForClassFields": true,
         "exceptMethods": Array [],
       },
     ],
@@ -151,7 +152,7 @@ Object {
     ],
     "complexity": Array [
       "off",
-      11,
+      20,
     ],
     "computed-property-spacing": Array [
       "error",
@@ -177,10 +178,10 @@ Object {
       },
     ],
     "default-case-last": Array [
-      "off",
+      "error",
     ],
     "default-param-last": Array [
-      "off",
+      "error",
     ],
     "dot-location": Array [
       "error",
@@ -227,12 +228,12 @@ Object {
       "expression",
     ],
     "function-call-argument-newline": Array [
-      "off",
+      "error",
       "consistent",
     ],
     "function-paren-newline": Array [
       "error",
-      "consistent",
+      "multiline-arguments",
     ],
     "generator-star-spacing": Array [
       "error",
@@ -251,15 +252,12 @@ Object {
       "error",
     ],
     "grouped-accessor-pairs": Array [
-      "off",
+      "error",
     ],
     "guard-for-in": Array [
       "error",
     ],
     "handle-callback-err": Array [
-      "off",
-    ],
-    "id-blacklist": Array [
       "off",
     ],
     "id-denylist": Array [
@@ -388,8 +386,15 @@ Object {
           "**/protractor.conf.js",
           "**/protractor.conf.*.js",
           "**/karma.conf.js",
+          "**/.eslintrc.js",
         ],
         "optionalDependencies": false,
+      },
+    ],
+    "import/no-import-module-exports": Array [
+      "error",
+      Object {
+        "exceptions": Array [],
       },
     ],
     "import/no-internal-modules": Array [
@@ -419,6 +424,9 @@ Object {
     "import/no-nodejs-modules": Array [
       "off",
     ],
+    "import/no-relative-packages": Array [
+      "error",
+    ],
     "import/no-relative-parent-imports": Array [
       "off",
     ],
@@ -435,6 +443,7 @@ Object {
       "error",
       Object {
         "caseSensitive": true,
+        "caseSensitiveStrict": false,
         "commonjs": true,
       },
     ],
@@ -465,6 +474,7 @@ Object {
             "internal",
           ],
         ],
+        "warnOnUnassignedImports": false,
       },
     ],
     "import/prefer-default-export": Array [
@@ -710,6 +720,7 @@ Object {
       "error",
       Object {
         "allowParens": true,
+        "onlyOneSimpleParam": false,
       },
     ],
     "no-console": Array [
@@ -728,7 +739,7 @@ Object {
       "warn",
     ],
     "no-constructor-return": Array [
-      "off",
+      "error",
     ],
     "no-continue": Array [
       "error",
@@ -752,7 +763,7 @@ Object {
       "error",
     ],
     "no-dupe-else-if": Array [
-      "off",
+      "error",
     ],
     "no-dupe-keys": Array [
       "error",
@@ -854,7 +865,7 @@ Object {
       "error",
     ],
     "no-import-assign": Array [
-      "off",
+      "error",
     ],
     "no-inline-comments": Array [
       "off",
@@ -894,7 +905,7 @@ Object {
       "error",
     ],
     "no-loss-of-precision": Array [
-      "off",
+      "error",
     ],
     "no-magic-numbers": Array [
       "off",
@@ -1014,6 +1025,9 @@ Object {
     "no-new-wrappers": Array [
       "error",
     ],
+    "no-nonoctal-decimal-escape": Array [
+      "error",
+    ],
     "no-obj-calls": Array [
       "error",
     ],
@@ -1055,7 +1069,7 @@ Object {
       "off",
     ],
     "no-promise-executor-return": Array [
-      "off",
+      "error",
     ],
     "no-proto": Array [
       "error",
@@ -1070,7 +1084,7 @@ Object {
       "error",
     ],
     "no-restricted-exports": Array [
-      "off",
+      "error",
       Object {
         "restrictedNamedExports": Array [
           "default",
@@ -1250,7 +1264,7 @@ Object {
       "error",
     ],
     "no-setter-return": Array [
-      "off",
+      "error",
     ],
     "no-shadow": Array [
       "error",
@@ -1325,7 +1339,7 @@ Object {
       "error",
     ],
     "no-unreachable-loop": Array [
-      "off",
+      "error",
       Object {
         "ignore": Array [],
       },
@@ -1335,6 +1349,12 @@ Object {
     ],
     "no-unsafe-negation": Array [
       "error",
+    ],
+    "no-unsafe-optional-chaining": Array [
+      "error",
+      Object {
+        "disallowArithmeticOperators": true,
+      },
     ],
     "no-unused-expressions": Array [
       "error",
@@ -1347,6 +1367,9 @@ Object {
     ],
     "no-unused-labels": Array [
       "error",
+    ],
+    "no-unused-private-class-members": Array [
+      "off",
     ],
     "no-unused-vars": Array [
       "error",
@@ -1365,7 +1388,7 @@ Object {
       },
     ],
     "no-useless-backreference": Array [
-      "off",
+      "error",
     ],
     "no-useless-call": Array [
       "off",
@@ -1536,7 +1559,7 @@ Object {
       },
     ],
     "prefer-exponentiation-operator": Array [
-      "off",
+      "error",
     ],
     "prefer-named-capture-group": Array [
       "off",
@@ -1557,7 +1580,10 @@ Object {
       "off",
     ],
     "prefer-regex-literals": Array [
-      "off",
+      "error",
+      Object {
+        "disallowRedundantWrapping": true,
+      },
     ],
     "prefer-rest-params": Array [
       "error",
@@ -1666,6 +1692,9 @@ Object {
     "sonarjs/cognitive-complexity": Array [
       "error",
     ],
+    "sonarjs/elseif-without-else": Array [
+      "off",
+    ],
     "sonarjs/max-switch-cases": Array [
       "error",
     ],
@@ -1687,7 +1716,13 @@ Object {
     "sonarjs/no-element-overwrite": Array [
       "error",
     ],
+    "sonarjs/no-empty-collection": Array [
+      "error",
+    ],
     "sonarjs/no-extra-arguments": Array [
+      "error",
+    ],
+    "sonarjs/no-gratuitous-expressions": Array [
       "error",
     ],
     "sonarjs/no-identical-conditions": Array [
@@ -1699,7 +1734,16 @@ Object {
     "sonarjs/no-identical-functions": Array [
       "error",
     ],
+    "sonarjs/no-ignored-return": Array [
+      "error",
+    ],
     "sonarjs/no-inverted-boolean-check": Array [
+      "off",
+    ],
+    "sonarjs/no-nested-switch": Array [
+      "error",
+    ],
+    "sonarjs/no-nested-template-literals": Array [
       "error",
     ],
     "sonarjs/no-one-iteration-loop": Array [
@@ -1724,6 +1768,9 @@ Object {
       "error",
     ],
     "sonarjs/no-useless-catch": Array [
+      "error",
+    ],
+    "sonarjs/non-existent-operator": Array [
       "error",
     ],
     "sonarjs/prefer-immediate-return": Array [

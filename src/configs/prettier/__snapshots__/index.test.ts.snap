@@ -10,6 +10,12 @@ Object {
     "prettier",
   ],
   "rules": Object {
+    "@babel/object-curly-spacing": Array [
+      "off",
+    ],
+    "@babel/semi": Array [
+      "off",
+    ],
     "@typescript-eslint/brace-style": Array [
       "off",
     ],
@@ -44,6 +50,9 @@ Object {
       0,
     ],
     "@typescript-eslint/semi": Array [
+      "off",
+    ],
+    "@typescript-eslint/space-before-blocks": Array [
       "off",
     ],
     "@typescript-eslint/space-before-function-paren": Array [
@@ -122,6 +131,9 @@ Object {
       "off",
     ],
     "flowtype/object-type-delimiter": Array [
+      "off",
+    ],
+    "flowtype/quotes": Array [
       "off",
     ],
     "flowtype/semi": Array [
@@ -491,6 +503,9 @@ Object {
       "off",
     ],
     "vue/operator-linebreak": Array [
+      "off",
+    ],
+    "vue/quote-props": Array [
       "off",
     ],
     "vue/script-indent": Array [
