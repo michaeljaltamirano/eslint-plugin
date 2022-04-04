@@ -27,12 +27,12 @@
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-promise": "^6.0.0",
 		"eslint-plugin-react": "^7.29.4",
-		"eslint-plugin-react-hooks": "^4.3.0",
-		"eslint-plugin-sonarjs": "^0.12.0",
-		"husky": "^4.x",
+		"eslint-plugin-react-hooks": "^4.4.0",
+		"eslint-plugin-sonarjs": "^0.13.0",
+		"husky": "^7.0.4",
 		"jest": "^27.5.1",
 		"lint-staged": "^12.3.7",
-		"prettier": "^2.6.1",
+		"prettier": "^2.6.2",
 		"ts-jest": "^27.1.4",
 		"typescript": "^4.6.3",
 		"yarn-deduplicate": "^4.0.0"
@@ -51,17 +51,12 @@
 		"eslint-plugin-react-hooks": "^4.3.0",
 		"eslint-plugin-sonarjs": "^0.12.0"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn run lint-staged",
-			"pre-push": "yarn run tsc"
-		}
-	},
 	"scripts": {
 		"build": "yarn run tsc --build",
 		"clean": "yarn run tsc --build --clean",
 		"lint": "yarn run eslint 'src/**/*.ts'",
 		"lint-tests": "yarn run eslint --no-eslintrc --config ./.eslintrc.jest.js 'src/**/*.test.ts' 'src/tests/**/*.ts'",
-		"test": "yarn run jest src"
+		"test": "yarn run jest src",
+		"prepare": "husky install"
 	}
 }
