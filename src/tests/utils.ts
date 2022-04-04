@@ -1,8 +1,11 @@
 import { execSync } from 'child_process';
 import path from 'path';
 import fs from 'fs';
+
 import { isJson } from '../utils';
 import type { EslintConfigWithReadonlyExtends } from '../types';
+
+const FIXTURE_FILE = 'fixture.json';
 
 const getFilePath = (dirname: string) => (file: string) =>
 	path.resolve(dirname, file);
@@ -15,13 +18,15 @@ export const generateTest = (
 		const baseJson = JSON.stringify(config);
 		const setPath = getFilePath(dirname);
 
-		fs.writeFileSync(setPath('fixture.json'), baseJson, {
+		fs.writeFileSync(setPath(FIXTURE_FILE), baseJson, {
 			flag: 'w',
 		});
 
+		execSync(`yarn run prettier --write ${setPath(FIXTURE_FILE)}`);
+
 		const eslintConfig = execSync(
 			`yarn run eslint --no-eslintrc -c ${setPath(
-				'fixture.json',
+				FIXTURE_FILE,
 			)} --print-config ${setPath('index.ts')}`,
 			{
 				encoding: 'utf8',
