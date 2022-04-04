@@ -5,6 +5,7 @@ import { react } from './configs/react';
 import { prettier } from './configs/prettier';
 import { typescript } from './configs/typescript';
 import { isNotNullish } from './utils';
+import { cypress } from './configs/cypress';
 
 interface Accumulator extends Omit<TSESLint.Linter.Config, 'extends'> {
 	extends: string[];
@@ -55,6 +56,7 @@ const config = {
 	configs: {
 		all: mergeRules(jest, react, typescript),
 		base,
+		cypress,
 		jest,
 		react,
 		prettier,

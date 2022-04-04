@@ -22,25 +22,31 @@ Currently there are no additional rules added via the plugin, so it is purely co
 "extends": "plugin:@michaeljaltamirano/base"
 ```
 
-### Jest configuration
+### Cypress
+
+```json
+"extends": "plugin:@michaeljaltamirano/cypress"
+```
+
+### Jest
 
 ```json
 "extends": "plugin:@michaeljaltamirano/jest"
 ```
 
-### Prettier configuration
+### Prettier
 
 ```json
 "extends": "plugin:@michaeljaltamirano/prettier"
 ```
 
-### React configuration
+### React
 
 ```json
 "extends": "plugin:@michaeljaltamirano/react"
 ```
 
-### TypeScript configuration
+### TypeScript
 
 ```json
 "extends": "plugin:@michaeljaltamirano/typescript"

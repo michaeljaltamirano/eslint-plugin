@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@michaeljaltamirano/eslint-plugin cypress config serializes to a snapshot 1`] = `
+Object {
+  "env": Object {
+    "cypress/globals": true,
+  },
+  "globals": Object {},
+  "ignorePatterns": Array [],
+  "parserOptions": Object {},
+  "plugins": Array [
+    "cypress",
+  ],
+  "rules": Object {
+    "cypress/assertion-before-screenshot": Array [
+      "error",
+    ],
+    "cypress/no-assigning-return-values": Array [
+      "error",
+    ],
+    "cypress/no-async-tests": Array [
+      "error",
+    ],
+    "cypress/no-force": Array [
+      "error",
+    ],
+    "cypress/no-pause": Array [
+      "error",
+    ],
+    "cypress/no-unnecessary-waiting": Array [
+      "error",
+    ],
+    "cypress/require-data-selectors": Array [
+      "off",
+    ],
+  },
+  "settings": Object {},
+}
+`;
