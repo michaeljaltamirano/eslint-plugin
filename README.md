@@ -2,15 +2,15 @@
 
 Strongly-opinionated ESLint configuration.
 
-Currently there are no additional rules added via the plugin, so it is purely configuration. It was setup as a plugin in the event bespoke rules are added in the future.
+Currently there are no additional rules added via the plugin, so it is purely configuration. It is setup as a plugin in the event bespoke rules are added in the future.
 
 ## Usage
 
 ### Installation
 
-`yarn add @michaeljaltamirano/eslint-plugin --dev` or `npm install @michaeljaltamirano/eslint-plugin --saveDev`
+`npx install-peerdeps --dev @michaeljaltamirano/eslint-plugin@latest`
 
-### All
+### All (Base, Jest, React, Prettier, TypeScript)
 
 ```json
 "extends": "plugin:@michaeljaltamirano/all"

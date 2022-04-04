@@ -540,10 +540,10 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
-"@michaeljaltamirano/eslint-plugin@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@michaeljaltamirano/eslint-plugin/-/eslint-plugin-0.7.0.tgz#44049634ef2c48c9727e6b752c532eea5708d55f"
-  integrity sha512-I32xjX+9FYXMpWe7xA5git6ngQ2jGwaLrMK0D2zOs2TJ/XcYEQ+L6FkitrTyciHy7lonW13xkmRJFMwLsXzrMg==
+"@michaeljaltamirano/eslint-plugin@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@michaeljaltamirano/eslint-plugin/-/eslint-plugin-0.8.0.tgz#45616ceeaa3dd20087dc51b3f14b4ac8068eba81"
+  integrity sha512-/LiLP+CREzHbDOQQjXOuct9MrYVBSKs6mjUDsLNKP8WUJcQMlQd/nSx9SqsIdXyIAPvOUL3dxmv/satG3LuQig==
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
