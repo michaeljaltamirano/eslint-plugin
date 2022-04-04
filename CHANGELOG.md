@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.8.0
+
+- Update more peerDependencies
+
 ## 0.7.0
 
 - Update dependencies for ESLint 8 compatibility
