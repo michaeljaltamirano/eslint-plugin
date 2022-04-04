@@ -10,7 +10,7 @@ Currently there are no additional rules added via the plugin, so it is purely co
 
 `npx install-peerdeps --dev @michaeljaltamirano/eslint-plugin@latest`
 
-### All
+### All (Base, Jest, React, Prettier, TypeScript)
 
 ```json
 "extends": "plugin:@michaeljaltamirano/all"
