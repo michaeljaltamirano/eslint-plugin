@@ -1,1 +1,17 @@
-{"extends":["eslint:recommended","plugin:promise/recommended","plugin:sonarjs/recommended","airbnb-base"],"rules":{"arrow-parens":"off","no-console":["error",{"allow":["warn","error"]}],"promise/no-nesting":"error","promise/no-return-in-finally":"error","promise/valid-params":"error","promise/prefer-await-to-then":"error","promise/prefer-await-to-callbacks":"error"}}
+{
+	"extends": [
+		"eslint:recommended",
+		"plugin:promise/recommended",
+		"plugin:sonarjs/recommended",
+		"airbnb-base"
+	],
+	"rules": {
+		"arrow-parens": "off",
+		"no-console": ["error", { "allow": ["warn", "error"] }],
+		"promise/no-nesting": "error",
+		"promise/no-return-in-finally": "error",
+		"promise/valid-params": "error",
+		"promise/prefer-await-to-then": "error",
+		"promise/prefer-await-to-callbacks": "error"
+	}
+}
