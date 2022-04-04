@@ -6,6 +6,7 @@
 		"plugin:jest/all",
 		"plugin:react/all",
 		"airbnb",
+		"plugin:react-hooks/recommended",
 		"plugin:@typescript-eslint/all",
 		"plugin:prettier/recommended"
 	],
@@ -32,6 +33,7 @@
 		],
 		"react/state-in-constructor": "off",
 		"react/static-property-placement": "off",
+		"react-hooks/exhaustive-deps": "error",
 		"@typescript-eslint/ban-ts-comment": "off",
 		"@typescript-eslint/ban-types": ["error", { "extendDefaults": true }],
 		"@typescript-eslint/camelcase": "off",

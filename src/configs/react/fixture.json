@@ -1,5 +1,5 @@
 {
-	"extends": ["plugin:react/all", "airbnb"],
+	"extends": ["plugin:react/all", "airbnb", "plugin:react-hooks/recommended"],
 	"rules": {
 		"react/jsx-filename-extension": [
 			"error",
@@ -10,6 +10,7 @@
 			{ "ignoreFunctionalComponents": true }
 		],
 		"react/state-in-constructor": "off",
-		"react/static-property-placement": "off"
+		"react/static-property-placement": "off",
+		"react-hooks/exhaustive-deps": "error"
 	}
 }
